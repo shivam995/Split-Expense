@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+
+<!--android:fillViewport="true">-->
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingHorizontal="@dimen/margin_16"
+        android:paddingVertical="@dimen/margin_16"
+        tools:context=".add_expense.AddExpenseActivity">
+
+
+    <EditText
+            android:id="@+id/etTransDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transaction Detail"
+            android:inputType="text"
+    />
+
+
+    <EditText
+            android:id="@+id/etTransAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transaction Amount"
+            android:layout_marginTop="@dimen/margin_8"
+            android:inputType="number"
+    />
+
+
+    <Button
+            android:id="@+id/btnAddContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_participant"
+            android:layout_marginTop="@dimen/margin_8"/>
+
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:id="@+id/containerParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="@dimen/margin_8"
+                android:orientation="vertical"/>
+
+    </ScrollView>
+
+    <Button
+            android:id="@+id/btnAddTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:layout_marginTop="@dimen/margin_8"/>
+
+</LinearLayout>
+
+        <!--</ScrollView>-->
